@@ -4,6 +4,7 @@ body {
   text-transform: uppercase;
   font-family: helvetica, arial, sans-serif;
   color: white;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .container {
@@ -23,7 +24,7 @@ body {
 }
 
 p {
-  font-family: helvetica, arial;
+  font-family: 'DM Sans', sans-serif;
   font-size: calc(15px + .25vw);
   font-weight: 700;
   text-align: left;
