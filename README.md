@@ -1,2 +1,2 @@
-# temporary.blue2021
-2021 Updates
+# jacobmedure.com
+2021 product design portfolio
