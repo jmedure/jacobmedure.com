@@ -10,7 +10,7 @@
   }
 
   .main {
-    max-width: 1320px;
+    max-width: 95%;
     margin: auto;
     margin-top: 72px;
     width: 100%;
@@ -145,7 +145,7 @@
   p {
     font-family: 'DM Sans', sans-serif;
     /* font-size: calc(15px + .25vw); */
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     text-align: left;
     word-wrap: normal;
@@ -171,9 +171,9 @@
   a {
     font-family: inherit, helvetica, arial;
     /* font-size: calc(15px + .25vw); */
-    /* font-weight: 700; */
-    text-decoration: #1997F2 underline;
+    font-weight: 700;
     transition: .25s;
+    color: #1997F2;
     text-decoration: none;
   }
 
@@ -189,6 +189,10 @@
     color: #1997F2;
   }
 
+  a:visited {
+    text-decoration: none;
+  }
+
   header {
     background: #FFFFFF;
     height: 80px;
@@ -199,7 +203,7 @@
     align-items: center;
     font-family: 'OakesGrotesk-Regular';
     /* border: solid 2px red; */
-    max-width: 1320px;
+    max-width: 95%;
     margin: auto;
     display: grid;
     grid-template-rows:auto;
@@ -210,6 +214,9 @@
   header a{
     font-family: 'DM-Sans';\
     weight: 0;
+    color: #191919;
+    text-decoration: none;
+    font-weight: normal;
   }
 
   .header-link {
@@ -249,7 +256,7 @@
 
   #philo {
     margin-bottom: 8px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
 
   .philo button {
@@ -302,8 +309,20 @@
 
   footer {
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
+    margin-top: 200px;
+    max-width: 95%;
+    margin: auto;
     /*border: 1px solid black;*/
+  }
+
+  .footer-line{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 2px;
+    width: 100%
+    background-color: #191919;
   }
 
   .box1 {
@@ -312,3 +331,19 @@
     font-size: calc(15px + .25vw);
     /*border: 1px solid black;*/
   }
+
+
+/* Media Queries */
+@media only screen and (min-width: 1320px){
+  .main {
+    max-width: 1320px;
+  }
+
+  header {
+    max-width: 1320px;
+  }
+
+  footer {
+    max-width: 1320px;
+  }
+}
