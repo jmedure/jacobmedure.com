@@ -69,7 +69,8 @@
     --s13: 80px;
     --s14: 96px;
     --s15: 112px;
-    --s16: 256px;
+    --s16: 196px;
+    --s17: 256px;
   }
 
   @font-face {
@@ -105,7 +106,7 @@
   }
 
   .intro{
-    padding: var(--s15) 0 var(--s16);
+    padding: var(--s16) 0 var(--s17);
   }
 
   .wrap{
@@ -173,8 +174,11 @@
   }
 
   h3 {
-    font-family: 'OakesGrotesk-Regular', sans-serif;
+    font-family: 'OakesGrotesk-regular', sans-serif;
     font-size: var(--f7);
+    text-transform: none;
+    text-decoration: none;
+    font-weight:lighter;
   }
 
   h4 {
@@ -244,7 +248,7 @@
   }
 
   a.oakes:hover .arrow{
-    margin-left: var(--s2);
+    margin-left: var(--s1);
   }
 
 
@@ -273,6 +277,22 @@
   #second {
     color: var(--c5);
     width: 420px;
+    transition: color .2s ease-in-out;
+    background-color: var(--c2);
+    background-image: var(--gradBlue);
+    background-clip: text;
+    background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+    /* color:inherit; */
+    -webkit-animation: gradientMotion 5s ease infinite;
+    -moz-animation: gradientMotion 5s ease infinite;
+    animation: gradientMotion 5s ease infinite;
+  }
+
+  #second:hover {
+    color: #2C2C2C00;
+    text-decoration: none;
   }
 
   a.dm {
@@ -290,12 +310,34 @@
     transition: color .2s ease-in-out;
     background-color: var(--c2);
     background-image: var(--gradPurp);
-    background-size: 100%;
+    background-size: 400% 400%;
     background-clip: text;
       -webkit-background-clip: text;
       -moz-background-clip: text;
     color: #2c2c2cFF;
-  }
+
+    -webkit-animation: gradientMotion 5s ease infinite;
+    -moz-animation: gradientMotion 5s ease infinite;
+    animation: gradientMotion 5s ease infinite;
+}
+
+@-webkit-keyframes gradientMotion{
+    0%{background-position:10% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientMotion {
+    0%{background-position:10% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientMotion {
+    0%{background-position:10% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
 
   #Echochamber-a:hover {
     color: #2C2C2C00;
@@ -306,11 +348,14 @@
     transition: color .2s ease-in-out;
     background-color: var(--c2);
     background-image: var(--gradBlue);
-    background-size: 100%;
+    background-size: 400% 400%;
     background-clip: text;
       -webkit-background-clip: text;
       -moz-background-clip: text;
     color: #2c2c2cFF;
+    -webkit-animation: gradientMotion 5s ease infinite;
+    -moz-animation: gradientMotion 5s ease infinite;
+    animation: gradientMotion 5s ease infinite;
   }
 
   #Jacobsblue-a:hover{
@@ -319,22 +364,25 @@
     transition: .2s ease-in-out; */
   }
 
-  #Jacobsblue-a:hover h1{
+  /* #Jacobsblue-a:hover h1{
     color: #2C2C2C00;
     transform: translate(0, -8px);
     transition: .2s ease-in-out;
-  }
+  } */
 
   #days-a {
     width: 100%;
     transition: color .2s ease-in-out;
     background-color: var(--c2);
     background-image: var(--gradSunset);
-    background-size: 100%;
+    background-size: 400% 400%;
     background-clip: text;
       -webkit-background-clip: text;
       -moz-background-clip: text;
     color: #2c2c2cFF;
+    -webkit-animation: gradientMotion 5s ease infinite;
+    -moz-animation: gradientMotion 5s ease infinite;
+    animation: gradientMotion 5s ease infinite;
   }
 
   #days-a:hover {
@@ -342,21 +390,22 @@
   }
 
   #myPage-a {
-    background-size: 60%;
     width: 100%;
     transition: color .2s ease-in-out;
     background-color: var(--c2);
     background-image: var(--gradMojito);
     background-clip: text;
+    background-size: 400% 400%;
       -webkit-background-clip: text;
       -moz-background-clip: text;
     color: #2c2c2cFF;
+    -webkit-animation: gradientMotion 5s ease infinite;
+    -moz-animation: gradientMotion 5s ease infinite;
+    animation: gradientMotion 5s ease infinite;
   }
 
   #myPage-a:hover {
     color: #2C2C2C00;
-    background-size: 100%;
-
   }
 
   .cs{
@@ -388,7 +437,7 @@
   } */
 
   a:hover {
-    background-color: #fff;
+    /* background-color: #fff; */
     /* background-image: var(--gradBlue);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -398,7 +447,28 @@
     transition: .25s; */
   }
 
-  a:visited {
+  .a-behavior{
+    width: 100%;
+    transition: color .2s ease-in-out;
+    background-color: var(--c2);
+    background-image: var(--gradBlue);
+    background-clip: text;
+    background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+    color:inherit;
+    -webkit-animation: gradientMotion 5s ease infinite;
+    -moz-animation: gradientMotion 5s ease infinite;
+    animation: gradientMotion 5s ease infinite;
+  }
+
+  .a-behavior:hover{
+    color: #2C2C2C00;
+    text-decoration: none;
+  }
+
+  a:active{
+    color: #2C2C2C00;
     text-decoration: none;
   }
 
@@ -463,16 +533,19 @@
   }
 
   .footer{
-    /* grid-area: main; */
+    grid-area: main;
+    font-family: 'OakesGrotesk-Regular';
     padding: var(--s15) 0px;
+    height: 100%;
+    padding: auto;
     /* text-align: center; */
     justify-content: space-between;
-    /* align-items: center; */
-    font-family: 'OakesGrotesk-Regular';
+    align-items: center;
     /* border: solid 2px red; */
     max-width: 95%;
     margin: auto;
     display: grid;
+    /* display: flex; */
     grid-template-rows: auto;
     grid-template-columns: auto auto;
     grid-template-areas: "footer-title footer-links";
@@ -480,6 +553,7 @@
 
   .footer-links{
     text-align: right;
+
   }
 
   .footer h6{
@@ -489,7 +563,22 @@
 
   .footer a{
     margin: var(--s2) 0;
+    font-size: 21px;
+    text-decoration: underline;
+    color: var(--c3);
+    transition: .3s ease-in-out;
   }
+
+  .footer a:hover{
+    text-decoration: none;
+    color: var(--c1);
+  }
+
+  .footer p{
+    font-size: 15px;
+    color: var(--c6);
+  }
+
 
 
 
