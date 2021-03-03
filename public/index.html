@@ -7,6 +7,9 @@
     <title>Jacob Medure | Product Designer</title>
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
+    <!-- Hamburger Menu Styles -->
+    <link href="../hamburgers-master/dist/hamburgers.css" rel="stylesheet" type="text/css">
+
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -15,16 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- OakesGrotesk Link -->
-    <link rel="stylesheet" type="text/css" href=".../webfonts/oakes-grotesk-light.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href=".../webfonts/oakes-grotesk-light-italic.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href=".../webfonts/oakes-grotesk-regular.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href=".../webfonts/oakes-grotesk-italic.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href=".../webfonts/oakes-grotesk-medium.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href=".../webfonts/oakes-grotesk-medium-italic.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-light.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-light-italic.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-regular.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-italic.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-medium.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-medium-italic.css" charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-semi-bold.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href=".../webfonts/oakes-grotesk-semi-bold-italic.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href=".../webfonts/oakes-grotesk-bold.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href=".../webfonts/oakes-grotesk-bold-italic.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-semi-bold-italic.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-bold.css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-bold-italic.css" charset="utf-8" />
 
     <!--  Essential META Tags -->
     <meta property="og:title" content="Jacob Medure | Product Designer">
@@ -35,7 +38,7 @@
     <meta name="og:type" content="article">
     <meta name="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="/assets/favicon.png">
+    <link rel="icon" href="assets/favicon.png">
     <link rel="shortcut icon" href="assets/favicon.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#1997F2">
@@ -55,6 +58,41 @@
         </nav>
 
        </header>
+
+       <button class="slide-out-toggle hamburger hamburger--squeeze" onclick="toggle()" type="button">
+         <!-- <span class="material-icons md-24">menu</span> -->
+         <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+       <div class="hidden" id="slide-out-menu">
+
+          <!-- <div>
+            <button class="close-toggle" onclick="toggle()">close<span class="material-icons md-24">close</span></button>
+          </div> -->
+        <div class="slide-out-wrap">
+           <nav class="slide-nav">
+             <a class="nav left" id="d1" href="/index.html">Work</a>
+             <a class="nav left" id="d2" href="about.html">About</a>
+             <a class="nav left" id="d3" href="#">Resume</a>
+             <a class="nav left" id="d4" href="#">Contact</a>
+           </nav>
+           <div class="slide-footer">
+            <div id="d5">
+             <h6 class="">Say hello</h6>
+             <a class="left">hello@jacobmedure.com</a>
+            </div>
+            <div id="d6">
+             <h6 class="">Connect with me</h6>
+             <a class="left">LinkedIn</a>
+             <a class="left">Medium</a>
+             <a class="left">Github</a>
+             <a class="left">Instagram</a>
+            </div>
+           </div>
+         </div>
+       </div>
 
 
 
@@ -116,24 +154,21 @@
             <div class="footer-block">
               <div class="footer wrap darkbg">
                 <h3 class="footer-title">Jacob Medure | Product Designer</h3>
-                <h6 class="footer-links">Say hello</h6>
-                <p class="footer-links"></p>
-                <a class="footer-links">hello@jacobmedure.com</a>
-                <p class="footer-links"></p>
-                <h6 class="footer-links">Connect with me</h6>
-                <p class="footer-links"></p>
-                <a class="footer-links">LinkedIn</a>
-                <p class="footer-links"></p>
-                <a class="footer-links">Medium</a>
-                <p class="footer-links"></p>
-                <a class="footer-links">Github</a>
-                <p class="footer-title">© 2021 Jacob Medure</p>
-                <a class="footer-links">Instagram</a>
-                <p class="sign-off">Made with lots of❤️and ☕ by Jacob Medure</p>
-
+                  <div class="social-links-block">
+                    <h6>Say hello</h6>
+                    <a class="left">hello@jacobmedure.com</a>
+                    <h6>Connect with me</h6>
+                    <a class="left">LinkedIn</a>
+                    <a class="left">Medium</a>
+                    <a class="left">Github</a>
+                    <a class="left">Instagram</a>
+                </div>
+                <p class="copy">© 2021 Jacob Medure</p>
+                <p class="love">Made with lots of ❤️ and ☕ by Jacob Medure</p>
               </div>
             </div>
           <!-- </footer> -->
+      <script src="app.js"></script>
     </body>
 
 </html>
