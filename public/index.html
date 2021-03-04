@@ -51,20 +51,25 @@
       <a class="title" href="/home">Product Design by J. Medure</a>
 
       <nav class="main-nav">
-          <a class="nav a-behavior" href="/home">Work</a>
+          <a class="nav a-behavior" href="/home">Home</a>
           <a class="nav a-behavior" href="about.html">About</a>
           <a class="nav a-behavior" href="/contact">Resume</a>
           <a class="nav a-behavior" href="/contact">Contact</a>
         </nav>
 
+        <button class="slide-out-toggle hamburger hamburger--squeeze" onclick="toggle()" type="button">
+          <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+         </span>
+       </button>
+
        </header>
 
-       <button class="slide-out-toggle hamburger hamburger--squeeze" onclick="toggle()" type="button">
-         <!-- <span class="material-icons md-24">menu</span> -->
+       <!-- <button class="slide-out-toggle hamburger hamburger--squeeze" onclick="toggle()" type="button">
          <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
-      </button>
+      </button> -->
 
        <div class="hidden" id="slide-out-menu">
 
@@ -99,7 +104,7 @@
         <div class="intro wrap">
           <div class="-">
 
-            <p class="oakes">
+            <p class="oakes" id="trigger1">
               Hi, I’m Jake - a product designer, front-end developer, and digital story teller based in <strike>NYC</strike> Denver, CO.
               I'm passionate about building products that help people be better versions of themselves.
             </p>
@@ -112,9 +117,9 @@
           </div>
         </div>
 
-            <div class="case-studies">
+            <div class="case-studies" id="reveal1">
               <div class="work wrap">
-                <h6>Work</h6>
+                <h6>Case Studies</h6>
                   <a>
                     <div id="Echochamber-a" class="cs">
                       <h1>Echochamber</h1>
@@ -156,12 +161,12 @@
                 <h3 class="footer-title">Jacob Medure | Product Designer</h3>
                   <div class="social-links-block">
                     <h6>Say hello</h6>
-                    <a class="left">hello@jacobmedure.com</a>
+                    <a href="mailt0:" lass="left">hello@jacobmedure.com</a>
                     <h6>Connect with me</h6>
-                    <a class="left">LinkedIn</a>
-                    <a class="left">Medium</a>
-                    <a class="left">Github</a>
-                    <a class="left">Instagram</a>
+                    <a href="#" class="left">LinkedIn</a>
+                    <a href="#" class="left">Medium</a>
+                    <a href="#" class="left">Github</a>
+                    <a href="#" class="left">Instagram</a>
                 </div>
                 <p class="copy">© 2021 Jacob Medure</p>
                 <p class="love">Made with lots of ❤️ and ☕ by Jacob Medure</p>
