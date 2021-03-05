@@ -1,8 +1,13 @@
 function toggle() {
   var element = document.getElementById("slide-out-menu");
   element.classList.toggle("hidden");
+  
+  var element = document.getElementById("hamburger");
+  element.classList.toggle("sticky");
   console.log(element);
 };
+
+
 
   var hamburger = document.querySelector(".hamburger");
     // On click
@@ -13,14 +18,30 @@ function toggle() {
   hamburger.classList.toggle("bw");
   });
 
-  var controller = new ScrollMagic.Controller();
+function fadeInScroll() {
+  var fadeElements = document.querySelectorAll('.fade-in');
+  // console.log(fadeElements);
+  fadeElements.forEach(el => {
+    el.classList.add("fade-in-toggle");
+    // console.log(el);
+  })
+}
 
-  new ScrollMagic.Scene({
-  							triggerElement: "#trigger1",
-  							triggerHook: 0.9, // show, when scrolled 10% into view
-  							duration: "100", // hide 10% before exiting view (80% + 10% from bottom)
-  							offset: 0 // move trigger to center of element
-  						})
-  						.setClassToggle("#reveal1", "visible") // add class to reveal
-  						.addIndicators() // add indicators (requires plugin)
-  						.addTo(controller);
+window.addEventListener("scroll", function(){
+  if (window.scrollY > 0) {
+    fadeInScroll();
+  };
+})
+
+function fadeInLoad() {
+  var fadeElements = document.querySelectorAll('.fade-in-load');
+  // console.log(fadeElements);
+  fadeElements.forEach(el => {
+    el.classList.add("fade-in-load-toggle");
+    // console.log(el);
+  })
+}
+
+window.addEventListener("load", function(){
+    fadeInLoad();
+})

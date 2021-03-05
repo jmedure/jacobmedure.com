@@ -36,12 +36,11 @@
     --f4: 16px;
     --f5: 18px;
     --f6: 24px;
-    --f7: 26px;
+    --f7: clamp(22px, calc(1rem + 10vw), 26px); /* 26px */
     --f8: 28px;
     --f9: 34px;
     --f10: 64px;
-    --f11: calc(3.1em + 3.1vw);
-    --f12: 128px;
+    --f11: clamp(48px, calc(1rem + 5.1vw), 96px); /* 96px */
     --f13: 256px;
 
     /* Letter Spacing  */
@@ -99,7 +98,7 @@
 
   .material-icons.md-88 {
     /* font-size: 88px; */
-    font-size: calc(4rem + 2.3vw);
+    font-size: clamp(42px, calc(1rem + 4vw), 88px);
   }
   .material-icons.md-24 {
     font-size: 24px;
@@ -111,30 +110,9 @@
   }
 
   a, input[type='submit'], input[type='image'], label[for], select, button, .pointer {
-         cursor: pointer;
+    cursor: pointer;
   }
 
-  #reveal1 {
-		opacity: 0;
-		-webkit-transform: scale(0.9);
-			 -moz-transform: scale(0.9);
-				-ms-transform: scale(0.9);
-				 -o-transform: scale(0.9);
-						transform: scale(0.9);
-		-webkit-transition: all 1s ease-in-out;
-			 -moz-transition: all 1s ease-in-out;
-				-ms-transition: all 1s ease-in-out;
-				 -o-transition: all 1s ease-in-out;
-						transition: all 1s ease-in-out;
-	}
-	#reveal1.visible {
-		opacity: 1;
-		-webkit-transform: none;
-			 -moz-transform: none;
-				-ms-transform: none;
-				 -o-transform: none;
-						transform: none;
-	}
 
   #slide-out-menu{
     height: 100%;
@@ -202,6 +180,14 @@
     top: 60vh;
     /* transition: right .3s ease-in-out; */
     /* transition-delay: .1s; */
+  }
+
+  #hamburger{
+    position: absolute;
+  }
+
+  #hamburger.sticky{
+    position: fixed;
   }
 
   .slide-out-toggle{
@@ -402,7 +388,7 @@
     text-align: left;
     word-wrap: normal;
     max-width: 641px;
-    margin-bottom: 48px;
+    margin-bottom: var(--s11);
   }
 
   p.dm {
@@ -606,6 +592,33 @@
     box-sizing: border-box;
     border-bottom: 3px solid var(--c6);
   }
+
+  .fade-in{
+    opacity: 0;
+    transition: opacity .7s ease-in-out, transform .3s ease-in-out;
+    transform: translate(0,200);
+  }
+
+  .fade-in-toggle{
+    opacity: 1;
+    transform: translate(0,0);
+  }
+
+  .fade-in-load{
+    opacity: 0;
+    transition: opacity .6s ease-in-out, transform .6s ease;
+    transform: translate(0,200px);
+    /* transform: translate(0,0); */
+  }
+
+  .fade-in-load-toggle{
+    opacity: 1;
+    transform: translate(0,0);
+  }
+
+  /* #Jacobsblue-a {
+    transition-delay: .5s;
+  } */
 
    a:last-child .cs{
     border: 0px solid;
