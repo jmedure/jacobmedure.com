@@ -6,10 +6,6 @@ body {
   animation: gradientMotion 10s ease infinite;
 }
 
-#gradBGMojito{
-
-}
-
 .a-behavior-dark {
   width: 100%;
   transition: color .2s ease-in-out;
