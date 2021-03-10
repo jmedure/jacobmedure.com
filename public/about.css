@@ -1,0 +1,50 @@
+body {
+  background-color: var(--c8);
+}
+
+header{
+  color: var(--c1);
+}
+
+.title{
+  color: var(--c1);
+}
+
+span.hamburger-inner::after , span.hamburger-inner::before, span.hamburger-inner{
+  background-color: var(--c1);
+}
+
+.intro{
+  color: var(--c1);
+  padding: var(--s15) 0px;
+}
+
+#grey{
+  color: var(--c5);
+}
+
+.currently {
+  background: var(--c1);
+  width: 100%;
+}
+
+.liCTA {
+  width: 100%;
+  text-decoration: underline;
+  transition: color .2s ease-in-out;
+  background-color: var(--c5);
+  background-image: var(--gradBlue);
+  background-clip: text;
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: var(--c5);
+  -webkit-animation: gradientMotion 5s ease infinite;
+  -moz-animation: gradientMotion 5s ease infinite;
+  animation: gradientMotion 5s ease infinite;
+}
+
+.liCTA:hover {
+  color: #2C2C2C00;
+  text-decoration: none;
+}

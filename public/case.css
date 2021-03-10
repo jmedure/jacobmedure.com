@@ -2,13 +2,17 @@ span.hamburger-inner::after , span.hamburger-inner::before, span.hamburger-inner
   background-color: var(--c1);
 }
 
-.white-text{
+header{
+  color: var(--c1);
+}
+
+.title{
   color: var(--c1);
 }
 
 .a-behavior-dark {
   width: 100%;
-  transition: color .2s ease-in-out;
+  transition: .2s ease-in-out;
   color: var(--c3);
   text-decoration: none;
 }
