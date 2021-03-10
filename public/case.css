@@ -1,26 +1,26 @@
-body {
-  background-image: var(--gradMojito);
-  background-size: 400% 400%;
-  -webkit-animation: gradientMotion 10s ease infinite;
-  -moz-animation: gradientMotion 10s ease infinite;
-  animation: gradientMotion 10s ease infinite;
+span.hamburger-inner::after , span.hamburger-inner::before, span.hamburger-inner{
+  background-color: var(--c1);
+}
+
+.white-text{
+  color: var(--c1);
 }
 
 .a-behavior-dark {
   width: 100%;
   transition: color .2s ease-in-out;
   color: var(--c3);
+  text-decoration: none;
 }
-
 
 .a-behavior-dark:hover {
   color: var(--c1);
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 .a-behavior-dark:active {
   color: var(--c1);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #divider{
@@ -30,7 +30,6 @@ body {
   border-radius: 5px;
   margin: var(--s13) auto 0px;
 }
-
 
 .lead-img {
   width: 100%;
@@ -42,7 +41,7 @@ body {
   border-radius: 10px;
   border: none !important;
   outline: none;
-  margin: var(--s11) auto;
+  margin: var(--s12) auto;
   margin-top: -296px;
 }
 
@@ -62,19 +61,21 @@ body {
 .full-img {
   width: 100%;
   height: auto;
-  background-color: var(--c1);
+  background: url('assets/011 - Flash Message Final.png'), var(--c1);
+  box-sizing: border-box;
+  box-shadow: none;
+  border: none !important;
 }
 
 img {
   width: 100%;
+  height: 100%;
   background-position: center;
   background-repeat: repeat;
+  background-clip: border-box;
   object-fit: cover;
   max-height: 628px;
-  background-color: white;
 }
-
-
 
 .blog-block{
   width: 100%;
@@ -87,7 +88,7 @@ img {
 }
 
 .blog{
-  width: 641px;
+  max-width: 641px;
   margin: auto;
 }
 
@@ -95,18 +96,18 @@ img {
   padding: var(--s0) 0px var(--s9);
 }
 
-#first-title{
+/* #first-title{
   margin-top: var(--s12);
-}
+} */
 
 .blog-section{
-  padding: var(--s1) 0px var(--s15) 0px;
+  padding: var(--s1) 0px var(--s11) 0px;
+  width: 100%;
 }
 
 .blog-section:first-child{
   padding-top: 0px
 }
-
 
 .blog-section:last-child{
   padding: var(--s1) 0px 0px 0px;
@@ -114,8 +115,8 @@ img {
 
 .paragraph{
   padding: var(--s5) 0px ;
+  width:100%;
 }
-
 
 .quote-block{
   width: 100%;
@@ -135,9 +136,46 @@ img {
   width: 100%;
 }
 
-.quote p{
+.quote p {
   text-align: center;
   width: 100%;
   margin:0;
   line-height: var(--lh2);
+}
+
+.slide-out-toggle {
+  background-color: var(--c1);
+}
+
+@media only screen and (max-width: 768px) {
+
+  div#gradBGMojito.wrap {
+    padding: 0;
+  }
+
+  div.sub-plus-copy{
+    margin-left: 0px;
+  }
+
+  div.blog-wrap.wrap{
+    max-width: 95%;
+    padding: var(--s12) 0px;
+  }
+
+  .quote{
+    max-width: 95%;
+  }
+
+  .quote-wrap{
+    max-width: 95%;
+  }
+
+  .quote-wrap{
+    max-width: 95%;
+    padding: var(--s13) 0px;
+  }
+
+  #divider{
+    margin: var(--s10) auto 0px;
+  }
 }
