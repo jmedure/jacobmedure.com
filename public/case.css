@@ -2,6 +2,22 @@ span.hamburger-inner::after , span.hamburger-inner::before, span.hamburger-inner
   background-color: var(--c1);
 }
 
+a:active {
+  color: var(--c1);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--c3);
+  text-decoration: none;
+}
+
+a:visited.title {
+  color: var(--c1);
+  text-decoration: none;
+}
+
+
 header{
   color: var(--c1);
 }

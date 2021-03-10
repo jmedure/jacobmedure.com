@@ -2,6 +2,21 @@ body {
   background-color: var(--c8);
 }
 
+a:active {
+  color: var(--c1);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--c4)
+  text-decoration: none;
+}
+
+a:visited.title {
+  color: var(--c1);
+  text-decoration: none;
+}
+
 header{
   color: var(--c1);
 }
