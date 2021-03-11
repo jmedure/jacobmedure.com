@@ -852,14 +852,16 @@
 
   .copy {
     grid-area: copy;
-    align-self: baseline;
+    align-self: flex-start;
+    border: solid 2px red;
   }
 
   .love {
     grid-area: love;
-    justify-self: center;
+    /* justify-content: center; */
     text-align: center;
-    align-self: baseline;
+    align-self: center;
+    border: solid 2px red;
   }
 
   /* .philo button {
