@@ -1,0 +1,7 @@
+body {
+  background-image: var(--gradBlue);
+  background-size: 400% 400%;
+  -webkit-animation: gradientMotion 10s ease infinite;
+  -moz-animation: gradientMotion 10s ease infinite;
+  animation: gradientMotion 10s ease infinite;
+}

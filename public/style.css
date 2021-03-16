@@ -100,7 +100,7 @@
     font-size: clamp(32px, calc(1.8rem + 3.5vw), 88px); /* 98px */
   }
 
-  .material-icons.md-88:before {
+  .material-icons.md-88::before {
     color: var(--c6);
   }
 
@@ -529,6 +529,59 @@
     text-decoration: none;
   }
 
+  .status{
+    width: 100%;
+    background-color: var(--c7);
+    bottom: 0;
+    box-sizing: content-box;
+    overflow: hidden;
+  }
+
+  @-webkit-keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+        }
+
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-140%, 0, 0);
+      }
+  }
+
+  @keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-140%, 0, 0);
+    }
+  }
+
+  #mono {
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    padding: var(--s2);
+    color: var(--c6);
+    font-size: var(--s3);
+    white-space: nowrap;
+    padding-left: 100%;
+    -webkit-animation-iteration-count: infinite;
+           animation-iteration-count: infinite;
+   -webkit-animation-timing-function: linear;
+           animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+          animation-name: ticker;
+   -webkit-animation-duration: 25s;
+           animation-duration: 25s;
+  }
+
+
   a.dm {
     font-family: inherit, helvetica, arial;
     /* font-size: calc(15px + .25vw); */
@@ -852,16 +905,14 @@
 
   .copy {
     grid-area: copy;
-    align-self: flex-start;
-    border: solid 2px red;
+    align-self: baseline;
   }
 
   .love {
     grid-area: love;
-    /* justify-content: center; */
+    justify-content: center;
     text-align: center;
-    align-self: center;
-    border: solid 2px red;
+    align-self: baseline;
   }
 
   /* .philo button {
@@ -911,6 +962,8 @@
     transition: .2s;
     color: #191919;
   } */
+
+
   /* Media Queries */
   @media only screen and (min-width: 1060px) {
     .wrap {
