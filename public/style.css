@@ -837,6 +837,10 @@
     width: 280px;
   }
 
+  .title a:visited {
+    color: var(--c8);
+  }
+
   .footer-block {
     background: var(--c8);
     width: 100%;
