@@ -869,7 +869,7 @@
     grid-area: title;
   }
 
-  .social-links-block {
+  .social-links-block1 {
     grid-area: block;
     display: flex;
     flex-flow: column nowrap;
