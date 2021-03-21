@@ -804,9 +804,8 @@
   }
 
   header a {
-    /* font-family: 'DM-Sans'; */
     weight: 0;
-    /* color: #191919; */
+    color: var(--c8);
     text-decoration: none;
     font-weight: normal;
     padding: 12px 0;
