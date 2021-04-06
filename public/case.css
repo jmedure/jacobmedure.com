@@ -65,9 +65,13 @@ header{
   margin-top: -296px;
 }
 
+.lead-img img{
+  border-radius: 10px;
+}
+
 .reg-img {
   width: 100%;
-  height: 526px;
+  height: 720px;
   background: var(--c7);
   display: block;
   box-sizing: border-box;
@@ -75,7 +79,7 @@ header{
   border-radius: 10px;
   border: none !important;
   outline: none;
-  margin: 0px auto var(--s12);
+  margin: 0px auto var(--s13);
 }
 
 .full-img {
@@ -85,6 +89,7 @@ header{
   box-sizing: border-box;
   box-shadow: none;
   border: none !important;
+  border-radius: 0px;
 }
 
 img {
@@ -94,7 +99,8 @@ img {
   background-repeat: repeat;
   background-clip: border-box;
   object-fit: cover;
-  max-height: 628px;
+  max-height: 728px;
+  border-radius: 10px;
 }
 
 .blog-block{
@@ -106,6 +112,10 @@ img {
   padding: var(--s15) 0px var(--s15) 0px;
   color: var(--c8);
 }
+
+/* #two{
+  padding-top: var(--s1);
+} */
 
 .blog{
   max-width: 641px;
@@ -121,7 +131,7 @@ img {
 } */
 
 .blog-section{
-  padding: var(--s1) 0px var(--s11) 0px;
+  padding: var(--s1) 0px var(--s16) ;
   width: 100%;
 }
 
