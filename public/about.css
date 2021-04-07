@@ -8,7 +8,7 @@ a:active {
 }
 
 a:visited {
-  color: var(--c4)
+  color: var(--c4);
   text-decoration: none;
 }
 
@@ -57,6 +57,14 @@ span.hamburger-inner::after , span.hamburger-inner::before, span.hamburger-inner
   -webkit-animation: gradientMotion 5s ease infinite;
   -moz-animation: gradientMotion 5s ease infinite;
   animation: gradientMotion 5s ease infinite;
+}
+
+.liCTA {
+  color: var(--c5);
+}
+
+.liCTA:visited{
+  color: var(--c5);
 }
 
 .liCTA:hover {
