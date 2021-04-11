@@ -91,6 +91,7 @@ header{
   border: none !important;
   border-radius: 0px;
   overflow:hidden;
+  aspect-ratio:
 }
 
 img {
