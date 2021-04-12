@@ -32,6 +32,10 @@ a.inline:hover {
   text-decoration: none;
 }
 
+#pink {
+  color:#EA4C8A;
+}
+
 
 header{
   color: var(--c1);
@@ -127,6 +131,13 @@ img {
   display: block;
 }
 
+#center{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: var(--s12) 0 var(--s1);
+}
+
 .blog-block{
   width: 100%;
   background-color: #fff;
@@ -137,9 +148,9 @@ img {
   color: var(--c7);
 }
 
-/* #two{
+#two{
   padding-top: var(--s1);
-} */
+}
 
 .blog{
   max-width: 641px;

@@ -886,6 +886,13 @@
     align-items: flex-end;
   }
 
+  .social-links-block {
+    grid-area: block;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+  }
+
   .social-links-block h6:first-child {
     margin-top: 0;
   }
