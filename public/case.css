@@ -2,6 +2,10 @@ span.hamburger-inner::after , span.hamburger-inner::before, span.hamburger-inner
   background-color: var(--c1);
 }
 
+body{
+  color: var(--c7);
+}
+
 a:active {
   color: var(--c1);
   text-decoration: underline;
@@ -14,6 +18,17 @@ a:visited {
 
 a:visited.title {
   color: var(--c1);
+  text-decoration: none;
+}
+
+a.inline {
+  color: var(--c5);
+  text-decoration: underline;
+  transition: .2s ease-in-out;
+}
+
+a.inline:hover {
+  color: var(--c6);
   text-decoration: none;
 }
 
@@ -53,7 +68,15 @@ header{
 
 .lead-img {
   width: 100%;
-  /* height: 526px; */
+  background: var(--c7);
+  display: block;
+  border-radius: 10px;
+  margin: var(--s12) auto;
+  margin-top: -296px;
+}
+
+.lead-img img{
+  border-radius: 10px;
   background: var(--c7);
   display: block;
   box-sizing: border-box;
@@ -61,21 +84,16 @@ header{
   border-radius: 10px;
   border: none !important;
   outline: none;
-  margin: var(--s12) auto;
-  margin-top: -296px;
-}
-
-.lead-img img{
-  border-radius: 10px;
+  max-height: 600px;
 }
 
 .reg-img {
   width: 100%;
-  height: 720px;
+  height: 100%;
   background: var(--c7);
   display: block;
   box-sizing: border-box;
-  box-shadow: 0px 8px 25px #00000035;
+  box-shadow: 0px 10px 25px #00000035;
   border-radius: 10px;
   border: none !important;
   outline: none;
@@ -84,25 +102,29 @@ header{
 
 .full-img {
   width: 100%;
-  height: auto;
-  background: url('assets/011 - Flash Message Final.png'), var(--c1);
+}
+
+.full-img img{
+  width: 100%;
+  display: block;
+  height: 2000%;
   box-sizing: border-box;
   box-shadow: none;
   border: none !important;
   border-radius: 0px;
-  overflow:hidden;
-  aspect-ratio:
+  overflow: hidden;
 }
 
 img {
   width: 100%;
   height: 100%;
-  background-position: center;
+  /* background-position: center;
   background-repeat: repeat;
-  background-clip: border-box;
+  background-clip: border-box; */
   object-fit: cover;
-  max-height: 728px;
+  max-height: 1000px;
   border-radius: 10px;
+  display: block;
 }
 
 .blog-block{
@@ -112,7 +134,7 @@ img {
 
 .blog-wrap{
   padding: var(--s15) 0px var(--s15) 0px;
-  color: var(--c8);
+  color: var(--c7);
 }
 
 /* #two{

@@ -95,6 +95,15 @@
       url('oakes-grotesk-semi-bold.svg#youworkforthem') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-family: 'OakesGrotesk-RegularItalic';
+    src: url('oakes-grotesk-italic.eot');
+    src: url('oakes-grotesk-italic.eot?#iefix') format('embedded-opentype'),
+               url('oakes-grotesk-italic.woff2') format('woff2'),
+         url('oakes-grotesk-italic.woff') format('woff'),
+         url('oakes-grotesk-italic.ttf') format('truetype'),
+         url('oakes-grotesk-italic.svg#youworkforthem') format('svg');
+    font-weight: normal;
+    font-style: italic;
   }
 
   .material-icons.md-88 {
@@ -918,54 +927,6 @@
     text-align: center;
     align-self: baseline;
   }
-
-  /* .philo button {
-    margin-top: 64px;
-    margin-left: 10px;
-  }
-
-  .philo-wrap {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    flex-wrap: wrap;
-  }
-
-  .philo-box {
-    width: 100%;
-    margin: space-between;
-    width: 280px;
-    height: 280px;
-    border: 2px solid #7E7E7E;
-    padding: 12px;
-    margin: 10px;
-    border-radius: 5px;
-    transition: .2s;
-    background: #fff;
-  }
-
-  .philo-box img {
-    width: 140px;
-  }
-
-  .philo-box h3 {
-    margin-top: 8px;
-  }
-
-  .philo-box p {
-    margin-top: 8px;
-    color: #7E7E7E;
-  }
-
-  .philo-box:hover {
-    border: 2px solid #191919;
-    transform: scale(1.02);
-    box-shadow: 0px 10px 20px #00000020;
-    transition: .2s;
-    color: #191919;
-  } */
 
 
   /* Media Queries */
