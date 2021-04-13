@@ -32,6 +32,10 @@ a.inline:hover {
   text-decoration: none;
 }
 
+.title-description h1 {
+  line-height: var(--lh1)
+}
+
 #pink {
   color:#EA4C8A;
 }
@@ -72,7 +76,7 @@ header{
 
 .lead-img {
   width: 100%;
-  background: var(--c7);
+  background: inherit;
   display: block;
   border-radius: 10px;
   margin: var(--s12) auto;
@@ -81,7 +85,7 @@ header{
 
 .lead-img img{
   border-radius: 10px;
-  background: var(--c7);
+  background-image: inherit;
   display: block;
   box-sizing: border-box;
   box-shadow: 0px 8px 25px #00000035;
