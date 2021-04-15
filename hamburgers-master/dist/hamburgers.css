@@ -58,7 +58,7 @@
     transition-duration: 0.2s;
     transition-timing-function: ease;
    }
-   
+
   .hamburger-inner::before, .hamburger-inner::after {
     content: "";
     display: block;

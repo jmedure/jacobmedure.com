@@ -382,6 +382,7 @@
     font-weight: lighter;
   }
 
+
   h2 {
     font-family: 'OakesGrotesk-Regular', sans-serif;
     letter-spacing: var(--ls2);
@@ -415,6 +416,10 @@
     font-family: 'OakesGrotesk-Semi-Bold', sans-serif;
     margin-bottom: var(--s11);
     display: block;
+  }
+
+  h6 sup {
+    color: var(--c6);
   }
 
   p.oakes {
