@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
     <!-- Hamburger Menu Styles -->
-    <link href="../hamburgers-master/dist/hamburgers.css" rel="stylesheet" type="text/css">
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet" type="text/css">
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -49,15 +49,16 @@
   </head>
 
     <body>
+
       <header>
 
       <a class="title" href="index.html">Product Design by J. Medure</a>
 
       <nav class="main-nav">
-          <a class="nav a-behavior-dark" href="index.html">Home</a>
-          <a class="nav a-behavior-dark" href="about.html">About</a>
-          <a class="nav a-behavior-dark" href="assets/JacobMedure_Resume_2021.pdf">Resume</a>
-          <a class="nav a-behavior-dark" href="mailto:hello@jacobmedure.com?subject=👋🏼Hello Jake -- ">Contact</a>
+          <a class="nav a-behavior" href="index.html">Home</a>
+          <a class="nav a-behavior" href="about.html">About</a>
+          <a class="nav a-behavior" href="assets/JacobMedure_Resume_2021.pdf">Resume</a>
+          <a class="nav a-behavior" href="mailto:hello@jacobmedure.com?subject=👋🏼Hello Jake -- ">Contact</a>
         </nav>
 
         <button id="hamburger" class="slide-out-toggle hamburger hamburger--squeeze" onclick="toggle()" type="button">
@@ -72,22 +73,22 @@
 
         <div class="slide-out-wrap">
            <nav class="slide-nav">
-             <a class="nav left" id="d1" href="index.html">Work</a>
+             <a class="nav left" id="d1" href="index.html">Home</a>
              <a class="nav left" id="d2" href="about.html">About</a>
              <a class="nav left" id="d3" href="assets/JacobMedure_Resume_2021.pdf">Resume</a>
              <a class="nav left" id="d4" href="mailto:hello@jacobmedure.com?subject=👋🏼Hello Jake -- ">Contact</a>
            </nav>
            <div class="slide-footer">
-            <div id="d5">
+            <!-- <div id="d5">
              <h6 class="">Say hello</h6>
-             <a class="left" href="mailto:hello@jacobmedure.com?subject=👋🏼Hello Jake -- ">hello@jacobmedure.com</a>
-            </div>
+             <a href="mailto:hello@jacobmedure.com?subject=👋🏼Hello Jake -- " class="left">hello@jacobmedure.com</a>
+            </div> -->
             <div id="d6">
-              <h6 class="">Let's Connect</h6>
-              <a href="https://www.linkedin.com/in/jacob-medure/" class="left">LinkedIn</a>
-              <a href="https://medium.com/@jacobs_blue" class="left">Medium</a>
-              <a href="https://github.com/jmedure" class="left">Github</a>
-              <a href="https://www.instagram.com/jacobs_blue/" class="left">Instagram</a>
+             <h6 class="">Connect with me</h6>
+             <a href="https://www.linkedin.com/in/jacob-medure/" target="_blank" class="left">LinkedIn</a>
+             <a href="https://medium.com/@jacobs_blue" target="_blank" class="left">Medium</a>
+             <a href="https://github.com/jmedure" target="_blank" class="left">Github</a>
+             <a href="https://www.instagram.com/jacobs_blue/" target="_blank" class="left">Instagram</a>
             </div>
            </div>
          </div>
