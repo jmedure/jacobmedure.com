@@ -158,6 +158,7 @@
     position: fixed;
     z-index: 1;
     transition: .3s ease-in-out;
+    color: var(--c5);
   }
 
   .slide-out-wrap {
