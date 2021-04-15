@@ -981,6 +981,11 @@
       padding: var(--s15) 0 var(--s16);
     }
 
+    .material-icons.md-88 {
+      font-size: 60px ;
+      margin-top: var(--s2);
+    }
+
     header {
       max-width: 95%;
     }
@@ -991,6 +996,8 @@
       flex-direction: column;
       align-items: center;
       padding: var(--s15) 0;
+      align-self: center;
+
     }
 
     .footer-title {
@@ -999,12 +1006,14 @@
       line-height: var(--lh2)
     }
 
-    .social-links-block {
+    .social-links-block1 {
       align-items: center;
+      justify-content: center;
+
     }
 
-    .social-links-block h6:first-child {
-      margin-top: var(--s13);
+    .social-links-block1 h6:first-child {
+      margin-top: var(--s12);
     }
 
     .footer p {
