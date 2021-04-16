@@ -355,6 +355,11 @@
     margin-bottom: var(--s11);
   }
 
+  ul.dm {
+    font-family: 'DM Sans', sans-serif;
+    font-size: var(--f5);
+  }
+
 
   ul {
     list-style-type: none;
