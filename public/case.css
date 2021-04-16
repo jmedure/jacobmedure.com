@@ -36,6 +36,10 @@ a.inline:hover {
   line-height: var(--lh1)
 }
 
+#grey{
+  color: var(--c4);
+}
+
 #pink {
   color:#EA4C8A;
 }
