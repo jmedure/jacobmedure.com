@@ -152,6 +152,10 @@ img {
   color: var(--c7);
 }
 
+#notop{
+  padding-top: 0px;
+}
+
 #two{
   padding-top: var(--s1);
 }
