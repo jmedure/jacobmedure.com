@@ -1,506 +1,571 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="case.css">
-    <link rel="stylesheet" type="text/css" href="jacobsBlue.css">
-    <title>Jacob Medure | Jacob's Blue Study</title>
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
-    <!-- Hamburger Menu Styles -->
-    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="case.css">
+  <link rel="stylesheet" type="text/css" href="jacobsBlue.css">
+  <title>Jacob Medure | Jacob's Blue Study</title>
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Hamburger Menu Styles -->
+  <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet" type="text/css">
 
-    <!-- Google Fonts Link -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- OakesGrotesk Link -->
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-light.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-light-italic.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-regular.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-italic.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-medium.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-medium-italic.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-semi-bold.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-semi-bold-italic.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-bold.css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-bold-italic.css" charset="utf-8" />
+  <!-- Google Fonts Link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
-    <!--  Essential META Tags -->
-    <meta property="og:title" content="Jacob Medure | Jacob's Blue Study">
-    <meta property="og:description" content="Digital storytelling experience, website, and home base for all things Jacob's Blue, recording artist, songwriter and producer.">
-    <meta property="og:image" content="https://jacobmedure.com/assets/OGimage.png">
-    <meta property="og:url" content="https://jacobmedure.com/jacobsBlue">
-    <meta name="og:image:type" content="image/png">
-    <meta name="og:type" content="article">
-    <meta name="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="assets/favicon.png">
-    <link rel="shortcut icon" href="assets/favicon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#1997F2">
-    <meta name="mobile-web-app-capable" content="yes">
-  </head>
+  <!-- OakesGrotesk Link -->
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-light.css" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-light-italic.css" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-regular.css" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-italic.css" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-medium.css" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-medium-italic.css" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-semi-bold.css" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-semi-bold-italic.css" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-bold.css" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="webfonts/oakes-grotesk-bold-italic.css" charset="utf-8" />
 
-    <body>
-      <header id="white-text">
+  <!--  Essential META Tags -->
+  <meta property="og:title" content="Jacob Medure | Jacob's Blue Study">
+  <meta property="og:description"
+    content="Digital storytelling experience, website, and home base for all things Jacob's Blue, recording artist, songwriter and producer.">
+  <meta property="og:image" content="https://jacobmedure.com/assets/OGimage.png">
+  <meta property="og:url" content="https://jacobmedure.com/jacobsBlue">
+  <meta name="og:image:type" content="image/png">
+  <meta name="og:type" content="article">
+  <meta name="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1997F2">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
 
-        <a class="title white-text" href="index.html">Product Design by J. Medure</a>
+<body>
+  <header id="white-text">
 
-          <nav class="main-nav">
-            <a class="nav a-behavior-dark" href="index.html">Home</a>
-            <a class="nav a-behavior-dark" href="about.html">About</a>
-            <a class="nav a-behavior-dark" href="assets/0821_Resume_JacobMedure.pdf">Resume</a>
-            <a class="nav a-behavior-dark" href="mailto:hello@jacobmedure.com?subject=👋🏼Hello, Jake -- ">Contact</a>
-          </nav>
+    <a class="title white-text" href="index.html">Product Design by J. Medure</a>
 
-          <button id="hamburger" class="slide-out-toggle hamburger hamburger--squeeze" onclick="toggle()" type="button">
-            <span class="hamburger-box">
-               <span class="hamburger-inner"></span>
-           </span>
-         </button>
+    <nav class="main-nav">
+      <a class="nav a-behavior-dark" href="index.html">Home</a>
+      <a class="nav a-behavior-dark" href="about.html">About</a>
+      <a class="nav a-behavior-dark" href="assets/ProductDesignResume_JacobMedure.pdf">Resume</a>
+      <a class="nav a-behavior-dark" href="mailto:hello@jacobmedure.com?subject=👋🏼Hello, Jake -- ">Contact</a>
+    </nav>
 
-       </header>
+    <button id="hamburger" class="slide-out-toggle hamburger hamburger--squeeze" onclick="toggle()" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
 
-         <div class="hidden" id="slide-out-menu">
+  </header>
 
-          <div class="slide-out-wrap">
-              <nav class="slide-nav">
-                <a class="nav left" id="d1" href="index.html">Home</a>
-                <a class="nav left" id="d2" href="about.html">About</a>
-                <a class="nav left" id="d3" href="assets/0821_Resume_JacobMedure.pdf">Resume</a>
-                <a class="nav left" id="d4" href="mailto:hello@jacobmedure.com?subject=👋🏼Hello, Jake -- ">Contact</a>
-              </nav>
-             <div class="slide-footer">
-              <!-- <div id="d5">
+  <div class="hidden" id="slide-out-menu">
+
+    <div class="slide-out-wrap">
+      <nav class="slide-nav">
+        <a class="nav left" id="d1" href="index.html">Home</a>
+        <a class="nav left" id="d2" href="about.html">About</a>
+        <a class="nav left" id="d3" href="assets/ProductDesignResume_JacobMedure.pdf">Resume</a>
+        <a class="nav left" id="d4" href="mailto:hello@jacobmedure.com?subject=👋🏼Hello, Jake -- ">Contact</a>
+      </nav>
+      <div class="slide-footer">
+        <!-- <div id="d5">
                <h6 class="">Say hello</h6>
                <a class="left" href="mailto:hello@jacobmedure.com?subject=👋🏼Hello, Jake -- ">hello@jacobmedure.com</a>
               </div> -->
-              <div id="d6">
-               <h6 class="">Connect with me</h6>
-               <a href="https://www.linkedin.com/in/jacob-medure/" class="left">LinkedIn</a>
-               <a href="https://jmedure.medium.com/" class="left">Medium</a>
-               <a href="https://github.com/jmedure" class="left">Github</a>
-               <a href="https://www.instagram.com/jacobs_blue/" class="left">Instagram</a>
-              </div>
-             </div>
-           </div>
-         </div>
+        <div id="d6">
+          <h6 class="">Connect with me</h6>
+          <a href="https://www.linkedin.com/in/jacob-medure/" class="left">LinkedIn</a>
+          <a href="https://jmedure.medium.com/" class="left">Medium</a>
+          <a href="https://github.com/jmedure" class="left">Github</a>
+          <a href="https://www.instagram.com/jacobs_blue/" class="left">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-         <!-- Page Content -->
+  <!-- Page Content -->
 
-        <div id="gradBGMojito" class="wrap">
-          <div class="- case-header fade-in-load white-text">
-            <div class="title-description">
-              <h1>Jacob's Blue</h1>
-              <h4>Digital storytelling experience, website, and home base for all things Jacob's Blue, recording artist, songwriter and producer.</h4>
+  <div id="gradBGMojito" class="wrap">
+    <div class="- case-header fade-in-load white-text">
+      <div class="title-description">
+        <h1>Jacob's Blue</h1>
+        <h4>Digital storytelling experience, website, and home base for all things Jacob's Blue, recording artist,
+          songwriter and producer.</h4>
+        </br>
+        <h6 id="grey">6 min read</h6>
+      </div>
+      <div class="case-sub-block a-block">
+        <div class="sub-plus-copy">
+          <h6>Roles</h6>
+          <p class="dm">UI/UX Designer, Front-End Developer, Creative Director, Artist</p>
+        </div>
+        <div class="sub-plus-copy">
+          <h6>Duration</h6>
+          <p class="dm">December 2020 - January 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-block fade-in">
+    <div class="blog-wrap wrap">
+      <div class="lead-img">
+        <img src="assets/jbHeader3.png" />
+      </div>
+      <div class="blog">
+        <section class="blog-section">
+          <div class="paragraph">
+            <h2 id="first-title">Step 1: Background and Overview</h2>
             </br>
-              <h6 id="grey">6 min read</h6>
-            </div>
-            <div class="case-sub-block a-block">
-              <div class="sub-plus-copy">
-                <h6>Roles</h6>
-                <p class="dm">UI/UX Designer, Front-End Developer, Creative Director, Artist</p>
-              </div>
-              <div class="sub-plus-copy">
-                <h6>Duration</h6>
-                <p class="dm">December 2020 - January 2021</p>
-              </div>
-            </div>
+            <h3>Background</h3>
+            <p class="dm">
+              Jacob's Blue is a recording artist, producer, musician, and songwriter. Before this project there was no
+              home base for Jacob's Blue other than an <a target="_blank" href="https://www.instagram.com/jacobs_blue/"
+                class="inline">instagram page</a>. An important aspect to his storytelling style is not just delivering
+              an auditory experience but building a world from which the music he makes comes from and which his
+              audience can find themselves. I was tasked with designing, creative directing, and developing the website.
+              An important note is that I am Jacob's Blue lol.
+            </p>
           </div>
-        </div>
-
-        <div class="blog-block fade-in">
-          <div class="blog-wrap wrap">
-            <div class="lead-img">
-              <img src="assets/jbHeader3.png"/>
-            </div>
-            <div class="blog">
-              <section class="blog-section">
-                <div class="paragraph">
-                  <h2 id="first-title">Step 1: Background and Overview</h2>
-                </br>
-                  <h3>Background</h3>
-                  <p class="dm">
-                    Jacob's Blue is a recording artist, producer, musician, and songwriter. Before this project there was no home base for Jacob's Blue other than an <a target="_blank" href="https://www.instagram.com/jacobs_blue/" class="inline">instagram page</a>. An important aspect to his storytelling style is not just delivering an auditory experience but building a world from which the music he makes comes from and which his audience can find themselves. I was tasked with designing, creative directing, and developing the website. An important note is that I am Jacob's Blue lol.
-                  </p>
-              </div>
-              <div class="paragraph">
-                <p class="dm">
-                  See the live site, <a class="inline" target="_blank" href="https://jacobs.blue">here</a>.
-                </p>
-              </div>
-            </section>
-            </div>
+          <div class="paragraph">
+            <p class="dm">
+              See the live site, <a class="inline" target="_blank" href="https://jacobs.blue">here</a>.
+            </p>
           </div>
-        </div>
+        </section>
+      </div>
+    </div>
+  </div>
 
-        <div class="quote-block">
-          <div class="quote-wrap">
-            <div class="quote">
-              <h6>Walter Chrysler</h6>
-              <p class="oakes"> I like to build things, I like to do things. I am having a lot of fun.</p>
-           </div>
+  <div class="quote-block">
+    <div class="quote-wrap">
+      <div class="quote">
+        <h6>Walter Chrysler</h6>
+        <p class="oakes"> I like to build things, I like to do things. I am having a lot of fun.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-block fade-in">
+    <div class="blog-wrap wrap">
+      <div class="blog">
+        <section class="blog-section">
+          <div class="paragraph">
+            <h3>Overview</h3>
+            <p class="dm">
+              In addition to being the new home for Jacob's Blue, where users should be able to easily navigate to find
+              all things related to the artist. The website was also meant to emphasize and tell the story of his latest
+              release and debut album "Born in the Sunset: Thoughts to Oasis." Due to limited resources the website
+              became the main delivery tool for additional storytelling and needed to become an immersive experience for
+              those listening to the project, fans both returning and new.
+            </p>
           </div>
-        </div>
-
-        <div class="blog-block fade-in">
-          <div class="blog-wrap wrap">
-            <div class="blog">
-              <section class="blog-section">
-                <div class="paragraph">
-                  <h3>Overview</h3>
-                  <p class="dm">
-                    In addition to being the new home for Jacob's Blue, where users should be able to easily navigate to find all things related to the artist. The website was also meant to emphasize and tell the story of his latest release and debut album "Born in the Sunset: Thoughts to Oasis." Due to limited resources the website became the main delivery tool for additional storytelling and needed to become an immersive experience for those listening to the project, fans both returning and new.
-                  </p>
-              </div>
-              <div class="paragraph">
-                <p class="dm">
-                  That being said time was also an important constraint. The album was already submitted to streaming services with a 8 day window before it went live. That meant the site had to accomplish several things within and 8 day window.
-              </div>
-
-              <div class="paragraph">
-                <p class="dm">
-                  <b>My checklist</b>
-                </p>
-                <ul class="dm">
-                  <li>bring to life vision of Jacob's Blue</li>
-                  <li>make sure users could navigate to the site from various funnels easily</li>
-                  <li>ensure users could easily explore the story the site/album was telling</li>
-                  <li>ensure users could listen to the music and/or easily naviate to their streaming platform of choice</li>
-                  <li>build the site to scale both on mobile and desktop</li>
-                  <li>accomplish all in 8 days</li>
-                </ul>
-              <div>
-
-            </section>
-            </div>
+          <div class="paragraph">
+            <p class="dm">
+              That being said time was also an important constraint. The album was already submitted to streaming
+              services with a 8 day window before it went live. That meant the site had to accomplish several things
+              within and 8 day window.
           </div>
-        </div>
 
-        <div class="reg-image">
-          <img src='assets/jbHeader.png'/>
-        </div>
+          <div class="paragraph">
+            <p class="dm">
+              <b>My checklist</b>
+            </p>
+            <ul class="dm">
+              <li>bring to life vision of Jacob's Blue</li>
+              <li>make sure users could navigate to the site from various funnels easily</li>
+              <li>ensure users could easily explore the story the site/album was telling</li>
+              <li>ensure users could listen to the music and/or easily naviate to their streaming platform of choice
+              </li>
+              <li>build the site to scale both on mobile and desktop</li>
+              <li>accomplish all in 8 days</li>
+            </ul>
+            <div>
 
-        <div class="blog-block fade-in">
-          <div class="blog-wrap wrap">
-            <div class="blog">
-              <section class="blog-section">
+        </section>
+      </div>
+    </div>
+  </div>
 
-                <div class="paragraph">
-                  <h2>Step 2: Define the Problem and Goal</h2>
-                </br>
-                  <h4>Problem</h4>
-                  <p class="dm">
-                    Users don't know the story and haven't heard the music of <em>Born in the Sunset: Thoughts to Oasis</em> by Jacob's Blue. They need to be able to find out more, explore the world he's created, and most importantly play his music. Two important constraints are time, and the fact that most users will have never heard of Jacob's Blue.
-                  </p>
-                </div>
+  <div class="reg-image">
+    <img src='assets/jbHeader.png' />
+  </div>
 
-                <div class="paragraph">
-                  <h4>Goal</h4>
-                  <p class="dm">
-                    Tell the story of <em>Born in the Sunset: Thoughts to Oasis</em> in an immersive way that doesn't get in the way of helping users navigate to the music quickly and effectively from any device.
-                  </p>
-                </div>
+  <div class="blog-block fade-in">
+    <div class="blog-wrap wrap">
+      <div class="blog">
+        <section class="blog-section">
 
-                <div class="paragraph">
-                  <h4>User Value</h4>
-                  <p class="dm">
-                    For both current fans and new site visitors to be able to find music easily. And for all who wish, current fan or not, to be able to explore the full storytelling experience.
-                  </p>
-                </div>
-
-            </section>
-
-
-
-
-              <section class="blog-section">
-
-                <div class="paragraph">
-                  <h2>Step 3: Scope</h2>
-                  <p class="dm">
-                    In the world of an up and coming artist often times the best solution is to do it yourself. As a lean team (me, myself, and I) a lot rested on my shoulders to complete in a short time.
-                  </p>
-                </br>
-                  <ul class="dm">
-                    <li>Visual Design</li>
-                    <li>UX Design</li>
-                    <li>Wireframes</li>
-                    <li>User Flows</li>
-                    <li>Prototype</li>
-                    <li>Development (HTML, CSS, JS)</li>
-                    <li>Creative Direction</li>
-                  </ul>
-                </div>
-
-                <div class="paragraph">
-                  <p class="dm">
-                    However, after spending a year and a half on the music, one more week of grind didn't seem to bad. It was actually really fun.
-                  </p>
-                </div>
-            </section>
-
-            <section class="blog-section">
-
-              <div class="paragraph">
-                <h2>Step 4: Target Audience</h2>
-                <p class="dm">
-                  The audience for Jacob's Blue was already defined. For context, the majority of Jacob's Blue listeners were in one place already. Instagram. That meant that I would have one link in bio directing all users to one place. I needed users familiar with Jacob's Blue to be able to navigate to the link and intuitively, find what they needed, but if they wanted ,to also be able to embrace the storytelling experience laid out before them.
-                </p>
-              </div>
-
-              <div class="paragraph">
-                <p class="dm">
-                  In addition to familiar fans, I knew this site and project would serve as the introduction for many new listeners to Jacob's Blue. It was important that I make it very simple for those users to also navigate the site and find their way through the content.
-                 </p>
-              </div>
-
-          </section>
-
-
-            </div>
+          <div class="paragraph">
+            <h2>Step 2: Define the Problem and Goal</h2>
+            </br>
+            <h4>Problem</h4>
+            <p class="dm">
+              Users don't know the story and haven't heard the music of <em>Born in the Sunset: Thoughts to Oasis</em>
+              by Jacob's Blue. They need to be able to find out more, explore the world he's created, and most
+              importantly play his music. Two important constraints are time, and the fact that most users will have
+              never heard of Jacob's Blue.
+            </p>
           </div>
-        </div>
 
-        <!-- PROCESS HEADER -->
-
-        <div class="quote-block">
-          <div class="quote-wrap">
-            <div class="quote">
-                <h6>Don Norman</h6>
-               <p class="oakes">Knowing how someone will use something is essential.</p>
-           </div>
+          <div class="paragraph">
+            <h4>Goal</h4>
+            <p class="dm">
+              Tell the story of <em>Born in the Sunset: Thoughts to Oasis</em> in an immersive way that doesn't get in
+              the way of helping users navigate to the music quickly and effectively from any device.
+            </p>
           </div>
-        </div>
 
-        <div class="blog-block fade-in">
-          <div class="blog-wrap wrap">
-            <div class="blog">
-              <section class="blog-section">
-                <div class="paragraph">
-                  <h2>Step 5: Process</h2>
-                  <p class="dm">
-                    Because of the tight deadline, I rushed a lot of this process. I needed to optimize for all to design objectives and user needs in the quickest and most effective way possible. I was more or less thinking MVP the entire time.
-                  </p>
-              </div>
-              <div class="paragraph">
-                <p class="dm">
-                  That being said, several aspects came together that made this project successful both from a design and a development standpoint.
-                </p>
-              </div>
-            </section>
-            </div>
+          <div class="paragraph">
+            <h4>User Value</h4>
+            <p class="dm">
+              For both current fans and new site visitors to be able to find music easily. And for all who wish, current
+              fan or not, to be able to explore the full storytelling experience.
+            </p>
           </div>
-        </div>
 
-        <div class="full-img">
-          <img src='assets/mobilefirst1.png'/>
-        </div>
+        </section>
 
 
-        <div class="blog-block fade-in">
-          <div  class="blog-wrap wrap">
-            <div class="blog">
-              <section class="blog-section">
-                <div class="paragraph">
-                  <h3>Mobile First</h3>
-                  <p class="dm">
-                    To reiterate, the majority of people navigating to this site would be coming from Instagram, Jacob's Blue's main audience base. Factoring in this information and my need for speed in this production, I decided to design a mobile first single column layout. This made development incredibly straightforward as I only needed 1 breakpoint to accommodate all styles.
-                  </p>
-              </div>
-            </section>
-            </div>
+
+
+        <section class="blog-section">
+
+          <div class="paragraph">
+            <h2>Step 3: Scope</h2>
+            <p class="dm">
+              In the world of an up and coming artist often times the best solution is to do it yourself. As a lean team
+              (me, myself, and I) a lot rested on my shoulders to complete in a short time.
+            </p>
+            </br>
+            <ul class="dm">
+              <li>Visual Design</li>
+              <li>UX Design</li>
+              <li>Wireframes</li>
+              <li>User Flows</li>
+              <li>Prototype</li>
+              <li>Development (HTML, CSS, JS)</li>
+              <li>Creative Direction</li>
+            </ul>
           </div>
-        </div>
 
-        <div class="full-img">
-          <img src='assets/nav1.png'/>
-        </div>
-
-        <div class="blog-block fade-in">
-          <div class="blog-wrap wrap">
-            <div class="blog">
-              <section class="blog-section">
-
-                <div class="paragraph">
-                  <h3>Sticky and Accesible Nav</h3>
-                  <p class="dm">
-                    A principle I try my best to maintain, especially in an instance like this where user traction is low, is that a navigation menu shouldn't be hidden until they have to be. Users may not even know who Jacob's Blue is yet, so if they come here and can't find what they're looking for immediately it most likely means they won't be listening at all. Both in the mobile and desktop experiences the nav is not hidden and is intentionally sticky so that at any point in the users' experience they're able to get what they ultimately came for, the music.
-                  </p>
-              </div>
-
-              <div class="paragraph">
-                <p class="dm">
-                  An important piece of context is that most artists use a <a class="inline" href="https://linktr.ee/?utm_source=googlesearch&utm_medium=cpc&utm_campaign=lnk000&utm_content=bau&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTllgQTyEVlJTjPfF-lyG2hl5TrWRYwOvbHx7PzAIZWmoig1mhDQa84aAiHyEALw_wcB">Linktree</a> in their link in bio on their social accounts. Linktree is more or less a landing page that houses links to everything relevant to that artist. It's an amazing tool for artist, thus it's popularity has risen recently. I had to assume users were used to this experience more than a website they had never been too.
-                </p>
-              </div>
-
-              <div class="paragraph">
-                <p class="dm">
-                  In order to combat this, I made sure there was a button that leads users to my own linktree where users could navigate to every streaming service humanly imaginable, both in the sticky nav and hero banner.
-                </p>
-              </div>
-
-              <div class="paragraph">
-                <p class="dm">
-                  Surfaced in the nav other than the linktree button, are the most popular streaming services for users convenience so that users would be at least 2 clicks away from instagram to streaming service and at most 3 clicks away.
-                </p>
-              </div>
-
-            </section>
-            </div>
+          <div class="paragraph">
+            <p class="dm">
+              However, after spending a year and a half on the music, one more week of grind didn't seem to bad. It was
+              actually really fun.
+            </p>
           </div>
-        </div>
+        </section>
 
-        <div class="blog-block fade-in">
-          <div id="notop" class="blog-wrap wrap">
+        <section class="blog-section">
 
-            <div class="reg-img">
-              <img src='assets/book.png'/>
-            </div>
-
-            <div class="blog">
-              <section class="blog-section">
-
-                <div class="paragraph">
-                  <h3>Personal Touches</h3>
-                  <p class="dm">
-                    The creation of the album was a personal process and I wanted to bring users into that world. As part of the enhancements I added to the desktop experience I added handwritten notes as vector graphics throughout, so that users almost felt like they were in the book, from which I created the entire album.
-                  </p>
-              </div>
-
-              <div class="paragraph">
-                <p class="dm">
-                  All my ideas start on paper so it felt like a natural thing to include. Moreover, I think it adds a lot of value to the desktop experience, making it charming for those that venture to explore it.
-                </p>
-              </div>
-
-            </section>
-            </div>
+          <div class="paragraph">
+            <h2>Step 4: Target Audience</h2>
+            <p class="dm">
+              The audience for Jacob's Blue was already defined. For context, the majority of Jacob's Blue listeners
+              were in one place already. Instagram. That meant that I would have one link in bio directing all users to
+              one place. I needed users familiar with Jacob's Blue to be able to navigate to the link and intuitively,
+              find what they needed, but if they wanted ,to also be able to embrace the storytelling experience laid out
+              before them.
+            </p>
           </div>
-        </div>
 
-        <div class="full-img">
-          <img src='assets/immersivescript1.png'/>
-        </div>
-
-        <div class="blog-block fade-in">
-          <div class="blog-wrap wrap">
-            <div class="blog">
-              <section class="blog-section">
-                <div class="paragraph">
-                  <h3>Immersive Script</h3>
-                  <p class="dm">
-                    Part of the process for this album was the production of an accompanying script. The album and script are meant to be packaged and read together so I wanted to create an environment where people could both read and listen easily. When users navigate to the script page, there is the script itself, a Spotify web-player embed for playing the album, and the ability to download the script for easier reading.
-                  </p>
-              </div>
-
-            </section>
-
-              <section class="blog-section">
-                <div class="paragraph">
-                  <h2>Step 6: Deliverables and Outcome</h2>
-                  <p class="dm">
-                    Overall, considering the timeline or not, this project was wildly successful. It strongly exceeded my expectations. As I hypothesized early in the project, the vast majority of users  viewed the site from a mobile platform. Around 84% of users viewed Jacobs.blue on mobile. The site handled almost 1000 unique visitors with no bugs or crashes. The site and album have received quality press from more than 5 other websites. And qualitatively, I received over 60 personal messages from people speaking about their fondness of the site and album.
-                  </p>
-                </div>
-              </section>
-
-                <section class="blog-section">
-
-                <div class="paragraph">
-                  <h2>Step 7: Lessons Learned</h2>
-                  <p class="dm">
-                    I wouldn't change anything about the design at the moment but one thing that bothered me quite a bit is that there is a small delay upon loading the page. It's the not the biggest deal in the world but there are definitely a lot of large images that I can either downsize or use a compression engine in the future to optimize page loading and site performance.
-                  </p>
-                </div>
-
-                <div class="paragraph">
-
-                  <p class="dm">
-                    But that's it. I look forward to more challenges, tight windows, and album rollouts like this in the future. Thanks for being here and if you haven't already, check out the <a class="inline" href="https://jacobs.blue">site</a> and let me know what you think! Peace ✌🏼
-                  </p>
-                </div>
-
-                <div id="divider"></div>
-
-            </section>
-            </div>
+          <div class="paragraph">
+            <p class="dm">
+              In addition to familiar fans, I knew this site and project would serve as the introduction for many new
+              listeners to Jacob's Blue. It was important that I make it very simple for those users to also navigate
+              the site and find their way through the content.
+            </p>
           </div>
+
+        </section>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- PROCESS HEADER -->
+
+  <div class="quote-block">
+    <div class="quote-wrap">
+      <div class="quote">
+        <h6>Don Norman</h6>
+        <p class="oakes">Knowing how someone will use something is essential.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-block fade-in">
+    <div class="blog-wrap wrap">
+      <div class="blog">
+        <section class="blog-section">
+          <div class="paragraph">
+            <h2>Step 5: Process</h2>
+            <p class="dm">
+              Because of the tight deadline, I rushed a lot of this process. I needed to optimize for all to design
+              objectives and user needs in the quickest and most effective way possible. I was more or less thinking MVP
+              the entire time.
+            </p>
+          </div>
+          <div class="paragraph">
+            <p class="dm">
+              That being said, several aspects came together that made this project successful both from a design and a
+              development standpoint.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-img">
+    <img src='assets/mobilefirst1.png' />
+  </div>
+
+
+  <div class="blog-block fade-in">
+    <div class="blog-wrap wrap">
+      <div class="blog">
+        <section class="blog-section">
+          <div class="paragraph">
+            <h3>Mobile First</h3>
+            <p class="dm">
+              To reiterate, the majority of people navigating to this site would be coming from Instagram, Jacob's
+              Blue's main audience base. Factoring in this information and my need for speed in this production, I
+              decided to design a mobile first single column layout. This made development incredibly straightforward as
+              I only needed 1 breakpoint to accommodate all styles.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-img">
+    <img src='assets/nav1.png' />
+  </div>
+
+  <div class="blog-block fade-in">
+    <div class="blog-wrap wrap">
+      <div class="blog">
+        <section class="blog-section">
+
+          <div class="paragraph">
+            <h3>Sticky and Accesible Nav</h3>
+            <p class="dm">
+              A principle I try my best to maintain, especially in an instance like this where user traction is low, is
+              that a navigation menu shouldn't be hidden until they have to be. Users may not even know who Jacob's Blue
+              is yet, so if they come here and can't find what they're looking for immediately it most likely means they
+              won't be listening at all. Both in the mobile and desktop experiences the nav is not hidden and is
+              intentionally sticky so that at any point in the users' experience they're able to get what they
+              ultimately came for, the music.
+            </p>
+          </div>
+
+          <div class="paragraph">
+            <p class="dm">
+              An important piece of context is that most artists use a <a class="inline"
+                href="https://linktr.ee/?utm_source=googlesearch&utm_medium=cpc&utm_campaign=lnk000&utm_content=bau&gclid=Cj0KCQjwyN-DBhCDARIsAFOELTllgQTyEVlJTjPfF-lyG2hl5TrWRYwOvbHx7PzAIZWmoig1mhDQa84aAiHyEALw_wcB">Linktree</a>
+              in their link in bio on their social accounts. Linktree is more or less a landing page that houses links
+              to everything relevant to that artist. It's an amazing tool for artist, thus it's popularity has risen
+              recently. I had to assume users were used to this experience more than a website they had never been too.
+            </p>
+          </div>
+
+          <div class="paragraph">
+            <p class="dm">
+              In order to combat this, I made sure there was a button that leads users to my own linktree where users
+              could navigate to every streaming service humanly imaginable, both in the sticky nav and hero banner.
+            </p>
+          </div>
+
+          <div class="paragraph">
+            <p class="dm">
+              Surfaced in the nav other than the linktree button, are the most popular streaming services for users
+              convenience so that users would be at least 2 clicks away from instagram to streaming service and at most
+              3 clicks away.
+            </p>
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-block fade-in">
+    <div id="notop" class="blog-wrap wrap">
+
+      <div class="reg-img">
+        <img src='assets/book.png' />
+      </div>
+
+      <div class="blog">
+        <section class="blog-section">
+
+          <div class="paragraph">
+            <h3>Personal Touches</h3>
+            <p class="dm">
+              The creation of the album was a personal process and I wanted to bring users into that world. As part of
+              the enhancements I added to the desktop experience I added handwritten notes as vector graphics
+              throughout, so that users almost felt like they were in the book, from which I created the entire album.
+            </p>
+          </div>
+
+          <div class="paragraph">
+            <p class="dm">
+              All my ideas start on paper so it felt like a natural thing to include. Moreover, I think it adds a lot of
+              value to the desktop experience, making it charming for those that venture to explore it.
+            </p>
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-img">
+    <img src='assets/immersivescript1.png' />
+  </div>
+
+  <div class="blog-block fade-in">
+    <div class="blog-wrap wrap">
+      <div class="blog">
+        <section class="blog-section">
+          <div class="paragraph">
+            <h3>Immersive Script</h3>
+            <p class="dm">
+              Part of the process for this album was the production of an accompanying script. The album and script are
+              meant to be packaged and read together so I wanted to create an environment where people could both read
+              and listen easily. When users navigate to the script page, there is the script itself, a Spotify
+              web-player embed for playing the album, and the ability to download the script for easier reading.
+            </p>
+          </div>
+
+        </section>
+
+        <section class="blog-section">
+          <div class="paragraph">
+            <h2>Step 6: Deliverables and Outcome</h2>
+            <p class="dm">
+              Overall, considering the timeline or not, this project was wildly successful. It strongly exceeded my
+              expectations. As I hypothesized early in the project, the vast majority of users viewed the site from a
+              mobile platform. Around 84% of users viewed Jacobs.blue on mobile. The site handled almost 1000 unique
+              visitors with no bugs or crashes. The site and album have received quality press from more than 5 other
+              websites. And qualitatively, I received over 60 personal messages from people speaking about their
+              fondness of the site and album.
+            </p>
+          </div>
+        </section>
+
+        <section class="blog-section">
+
+          <div class="paragraph">
+            <h2>Step 7: Lessons Learned</h2>
+            <p class="dm">
+              I wouldn't change anything about the design at the moment but one thing that bothered me quite a bit is
+              that there is a small delay upon loading the page. It's the not the biggest deal in the world but there
+              are definitely a lot of large images that I can either downsize or use a compression engine in the future
+              to optimize page loading and site performance.
+            </p>
+          </div>
+
+          <div class="paragraph">
+
+            <p class="dm">
+              But that's it. I look forward to more challenges, tight windows, and album rollouts like this in the
+              future. Thanks for being here and if you haven't already, check out the <a class="inline"
+                href="https://jacobs.blue">site</a> and let me know what you think! Peace ✌🏼
+            </p>
+          </div>
+
+          <div id="divider"></div>
+
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="case-studies fade-in">
+    <div class="work wrap">
+      <h6 class="fade-in">View More Case Studies</h6>
+      <a href="echoChamber.html">
+        <div id="Echochamber-a" class="cs fade-in">
+          <h1>Echochamber</h1>
+          <span class="material-icons md-88">arrow_forward</span>
         </div>
+      </a>
 
+      <a href="100days.html">
+        <div id="days-a" class="cs fade-in">
+          <h1>100 Days of UI</h1>
+          <span class="material-icons md-88">arrow_forward</span>
+        </div>
+      </a>
 
-            <div class="case-studies fade-in">
-              <div class="work wrap">
-                <h6 class="fade-in">View More Case Studies</h6>
-                  <a href="echoChamber.html">
-                    <div id="Echochamber-a" class="cs fade-in">
-                      <h1>Echochamber</h1>
-                      <span class="material-icons md-88">arrow_forward</span>
-                    </div>
-                  </a>
+      <a href="myPage.html">
+        <div id="myPage-a" class="cs fade-in">
+          <h1>myPage</h1>
+          <span class="material-icons md-88">arrow_forward</span>
+        </div>
+      </a>
 
-                  <a href="100days.html">
-                    <div id="days-a" class="cs fade-in">
-                      <h1>100 Days of UI</h1>
-                      <span class="material-icons md-88" >arrow_forward</span>
-                    </div>
-                  </a>
-
-                  <a href="myPage.html">
-                    <div id="myPage-a" class="cs fade-in">
-                      <h1>myPage</h1>
-                      <span class="material-icons md-88" >arrow_forward</span>
-                    </div>
-                  </a>
-
-                  <!-- <a>
+      <!-- <a>
                     <div id="myPage-a" class="cs fade-in">
                       <h1>myPage</h1>
                       <span class="material-icons md-88" >arrow_forward</span>
                     </div>
                   </a> -->
-              </div>
-          </div>
+    </div>
+  </div>
 
 
-          <!-- <footer> -->
-            <div class="footer-block">
-              <div class="footer wrap darkbg">
-                <h3 class="footer-title">Jacob Medure | Product Designer</h3>
-                  <div class="social-links-block1">
-                    <h6>Say hello</h6>
-                    <a href="mailto:hello@jacobmedure.com?subject=👋🏼Hello, Jake -- " class="left">hello@jacobmedure.com</a>
-                    <h6>Connect with me</h6>
-                    <a href="https://www.linkedin.com/in/jacob-medure/" target="_blank" class="left">LinkedIn</a>
-                    <a href="https://jmedure.medium.com/" target="_blank" class="left">Medium</a>
-                    <a href="https://github.com/jmedure" target="_blank" class="left">Github</a>
-                    <a href="https://www.instagram.com/jacobs_blue/" target="_blank" class="left">Instagram</a>
-                </div>
-                <p class="copy">© 2021-ထ Jacob Medure</p>
-                <p class="love">Made with lots of ❤️ and ☕ by Jacob Medure</p>
-              </div>
-            </div>
+  <!-- <footer> -->
+  <div class="footer-block">
+    <div class="footer wrap darkbg">
+      <h3 class="footer-title">Jacob Medure | Product Designer</h3>
+      <div class="social-links-block1">
+        <h6>Say hello</h6>
+        <a href="mailto:hello@jacobmedure.com?subject=👋🏼Hello, Jake -- " class="left">hello@jacobmedure.com</a>
+        <h6>Connect with me</h6>
+        <a href="https://www.linkedin.com/in/jacob-medure/" target="_blank" class="left">LinkedIn</a>
+        <a href="https://jmedure.medium.com/" target="_blank" class="left">Medium</a>
+        <a href="https://github.com/jmedure" target="_blank" class="left">Github</a>
+        <a href="https://www.instagram.com/jacobs_blue/" target="_blank" class="left">Instagram</a>
+      </div>
+      <p class="copy">© 2021-ထ Jacob Medure</p>
+      <p class="love">Made with lots of ❤️ and ☕ by Jacob Medure</p>
+    </div>
+  </div>
 
-            <!-- Ticker -->
+  <!-- Ticker -->
 
-            <div class="status">
-                <p id="mono">
-                  Product Design by J. Medure version 2.01 - Last updated 08.02.2021 by J. MEDURE • STATUS: <a href="mailto:hello@jacobmedure.com?subject=👋🏼Hello, Jake -- " class="a-behavior">AVAILABLE FOR HIRE</a>
-                </p>
-            </div>
+  <div class="status">
+    <p id="mono">
+      Product Design by J. Medure version 2.01 - Last updated 08.02.2021 by J. MEDURE • STATUS: <a
+        href="mailto:hello@jacobmedure.com?subject=👋🏼Hello, Jake -- " class="a-behavior">AVAILABLE FOR HIRE</a>
+    </p>
+  </div>
 
-          <!-- </footer> -->
-      <script src="app.js"></script>
-    </body>
+  <!-- </footer> -->
+  <script src="app.js"></script>
+</body>
 
 </html>
